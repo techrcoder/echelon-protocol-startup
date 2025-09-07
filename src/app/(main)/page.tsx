@@ -12,6 +12,8 @@ import {
   LetterFx,
   Avatar,
   useTheme,
+  RevealFx,
+  Media
 } from "@once-ui-system/core";
 import { useRef } from "react";
 
@@ -58,9 +60,9 @@ export default function Home() {
         paddingX="l"
       > 
         {/* Logo */}     
-        <Logo icon="src/app/echelon_image.png" size="s" href="https://once-ui.com"/>   
+        {/* <Logo icon="src/app/echelon_image.png" size="s" href="https://once-ui.com"/>    */}
         <Text>
-          Building the future 
+          E C H E L O N
         </Text>
         {/* Menu Bar Items */}
         <Row gap="l" as="ul" style={{ listStyle: "none" }}>
@@ -79,9 +81,13 @@ export default function Home() {
       </Row>
 
       {/* Header Text */}
-      <Text variant="display-strong-l"> 
-        Hello World 
+      {/* <Row marginX="l"> */}
+      <Text variant="display-strong-xl" wrap="balance" marginTop="160" marginRight="160" marginLeft="160" marginBottom="80" align="center" >
+      {/* <Text style={{ fontSize: 48, letterSpacing: 1, marginTop: 32, marginLeft: 200, marginRight: 200}}> */}
+        Orchestrating the Future of Robotic Fleets.
       </Text>
+      {/* </Row> */}
+      
     </Column>
 
     // <Column fillWidth>
