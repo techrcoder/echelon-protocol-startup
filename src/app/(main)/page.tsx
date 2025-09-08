@@ -22,13 +22,9 @@ import {
   Flex
 } from "@once-ui-system/core";
 
+import Claude_Lab from "./blocked_road_lab_claude";
 import { useRef } from "react";
-// import Demo from './demo';
-// import NewDemo from './new_demo';
-import UncoordinatedDemo from './unco_demo';
-import CoordinatedDemo from './coo_demo';
-import { New_Amsterdam } from "next/font/google";
-import New_Demo from "./new_demo";
+
 
 const sections = [
   { id: "hero", label: "Home" },
@@ -233,44 +229,19 @@ export default function Home() {
       {/* The Demo Section */}
       <section ref={sectionRefs.demo} id="demo">
         <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 900 }}>
-          <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>What happens when machines talk.</Heading>
-          <Card center fillWidth style={{ padding: 32, minHeight: 320, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>
-            [ Demo GIF or Video Placeholder ]
-          </Card>
+          <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>What happens when machines talk.</Heading>          
 
-          <Carousel
-            items={[
-              { slide: 
-              <Column fillWidth center radius="s" background="brand-strong">
-                <Text>Uncoordinated</Text>
-                <UncoordinatedDemo />
-                </Column> 
-                },
-              { slide:               
-              <Column fillWidth center radius="s" background="brand-strong">
-                <Text>Echelon-Enabled Device Coordination</Text>
-                <CoordinatedDemo />
-                </Column> 
-            },
-            ]}
-          />
+          {/* <Text>Delivery Objectives Demo:</Text> */}
+          {/* <New_Demo /> */}
+          {/* <BlockedRoadLab_Claude /> */}
+          <Claude_Lab />
+          
 
           <Text variant="heading-default-m" style={{ textAlign: "center" }}>
             Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
           </Text>
         </Column>
       </section>
-
-      {/* <Demo /> */}
-      <UncoordinatedDemo />
-      <CoordinatedDemo />
-      <Text>New Demo:</Text>
-      <New_Demo />
-
-      <Column style={{ marginTop: 300 }}>
-        <Text>_ </Text>
-         </Column>
-
     </Column>
   );
 }
