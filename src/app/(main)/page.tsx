@@ -231,13 +231,10 @@ export default function Home() {
         <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 900 }}>
           <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>What happens when machines talk.</Heading>          
 
-          {/* <Text>Delivery Objectives Demo:</Text> */}
-          {/* <New_Demo /> */}
-          {/* <BlockedRoadLab_Claude /> */}
           <Blocked_Road_lab />
           
 
-          <Text variant="heading-default-m" style={{ textAlign: "center" }}>
+          <Text variant="heading-strong-l" style={{ textAlign: "center", marginTop: "24", marginBottom: "300"}}>
             Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
           </Text>
         </Column>
