@@ -5,7 +5,7 @@ import {
   Text,
   Button,
   Column,
-  Row,
+  Row,  
   Card,
   Badge,
   Logo,
@@ -17,6 +17,8 @@ import {
   Icon,
   Scroller,
   Line,  
+  Carousel,
+  TiltFx,
   Flex
 } from "@once-ui-system/core";
 import { useRef } from "react";
@@ -63,13 +65,22 @@ export default function Home() {
         paddingY="m"
         paddingX="l"
       >         
-        <Text>
-          E C H E L O N
-        </Text>
+        
+          <Text>
+            <LetterFx 
+  speed="medium"
+  trigger="instant"
+  >
+            E C H E L O N
+            </LetterFx>
+          </Text>
+        
+
         {/* Menu Bar Items */}
         <Row gap="l" as="ul" style={{ listStyle: "none" }}>
           {sections.map((s) => (
             <li key={s.id}>
+              <RevealFx>
               <Button
                 variant="secondary"
                 style={{ fontWeight: 600, fontSize: 16, borderRadius: 24, transition: "color 0.2s, background 0.2s", background: "transparent" }}
@@ -77,6 +88,7 @@ export default function Home() {
               >
                 {s.label}
               </Button>
+              </RevealFx>
             </li>
           ))}
         </Row>
@@ -85,16 +97,21 @@ export default function Home() {
       {/* Header Text / HERO SECTION */}
       <section ref={sectionRefs.hero} id="hero">
         <Column center fillWidth gap="l" style={{ marginBottom: 300 }}>
+          <RevealFx>
           <Text variant="display-strong-xl" wrap="balance" marginTop="160" marginRight="160" marginLeft="160" align="center" >
             Orchestrating the Future of Robotic Fleets.
           </Text>
+          </RevealFx>
 
           {/* Subheader description text */}
+          <RevealFx delay={0.3}>
           <Text variant="heading-strong-xl" wrap="balance" marginRight="160" marginLeft="160" align="center" onBackground="neutral-medium">
             We are building a secure protocol to allow autonomous vehicles, drones, and robots to safely coordinate decisions in real-time, solving critical labor shortages and fragmentation.
           </Text>
+          </RevealFx>
 
           {/* Call to Action Button - "Learn More" {or} "See Demo"*/}
+          <RevealFx center delay={0.6}>
           <Button
             size="l"
             id="arrow-button-1" arrowIcon
@@ -104,6 +121,7 @@ export default function Home() {
           >
             See the Demo
           </Button>
+          </RevealFx>
         </Column>
       </section>
       
@@ -120,65 +138,71 @@ export default function Home() {
 
           {/* The Three Problems */}
           <Row fillWidth gap="16" paddingX="160">
-            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-              <Column gap="24" align="center">
-                <Flex background="brand-medium"
-                  style={{
-                    background: "brand-medium", // Use var() or a Once UI token
-                    borderRadius: "50%",
-                    width: 48,
-                    height: 48,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto", // for horizontal center in case
-                  }}
-                >
-                  <Text variant="body-strong-m" onBackground="brand-strong">1</Text>
-                </Flex>
+            <TiltFx aspectRatio={6 / 4} radius="xl">
+              <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+                <Column gap="24" align="center">
+                  <Flex background="brand-medium"
+                    style={{
+                      background: "brand-medium", // Use var() or a Once UI token
+                      borderRadius: "50%",
+                      width: 48,
+                      height: 48,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "auto", // for horizontal center in case
+                    }}
+                  >
+                    <Text variant="body-strong-m" onBackground="brand-strong">1</Text>
+                  </Flex>
 
-                <Text align="center" variant="body-default-m">Vehicles only see with their own sensors, leading to congestion and inefficiency.</Text>
-              </Column>
-            </Card>
+                  <Text align="center" variant="body-default-m">Vehicles only see with their own sensors, leading to congestion and inefficiency.</Text>
+                </Column>
+              </Card>
+            </TiltFx>
 
-            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-              <Column gap="24" align="center">
-                <Flex background="brand-medium"
-                  style={{
-                    background: "brand-medium", // Use var() or a Once UI token
-                    borderRadius: "50%",
-                    width: 48,
-                    height: 48,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto", // for horizontal center in case
-                  }}
-                >
-                  <Text variant="body-strong-m" onBackground="brand-strong">2</Text>
-                </Flex>
+            <TiltFx aspectRatio={6 / 4} radius="xl">
+              <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+                <Column gap="24" align="center">
+                  <Flex background="brand-medium"
+                    style={{
+                      background: "brand-medium", // Use var() or a Once UI token
+                      borderRadius: "50%",
+                      width: 48,
+                      height: 48,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "auto", // for horizontal center in case
+                    }}
+                  >
+                    <Text variant="body-strong-m" onBackground="brand-strong">2</Text>
+                  </Flex>
 
-                <Text align="center" variant="body-default-m">Fleets waste billions due to a critical lack of coordination and communication.</Text>
-              </Column>
-            </Card>
+                  <Text align="center" variant="body-default-m">Fleets waste billions due to a critical lack of coordination and communication.</Text>
+                </Column>
+              </Card>
+            </TiltFx>
 
-            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-              <Column gap="24" align="center">
-                <Flex background="brand-medium"
-                  style={{
-                    background: "brand-medium", // Use var() or a Once UI token
-                    borderRadius: "50%",
-                    width: 48,
-                    height: 48,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto", // for horizontal center in case
-                  }}
-                >
-                  <Text variant="body-strong-m" onBackground="brand-strong">3</Text>
-                </Flex>
+            <TiltFx aspectRatio={6 / 4} radius="xl">
+              <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+                <Column gap="24" align="center">
+                  <Flex background="brand-medium"
+                    style={{
+                      background: "brand-medium", // Use var() or a Once UI token
+                      borderRadius: "50%",
+                      width: 48,
+                      height: 48,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "auto", // for horizontal center in case
+                    }}
+                  >
+                    <Text variant="body-strong-m" onBackground="brand-strong">3</Text>
+                  </Flex>
 
-                <Text align="center" variant="body-default-m">Safety is at risk without a universal, secure communication standard.</Text>
-              </Column>
-            </Card>
+                  <Text align="center" variant="body-default-m">Safety is at risk without a universal, secure communication standard.</Text>
+                </Column>
+              </Card>
+            </TiltFx>
           </Row>
         </Column>
       </section>
@@ -206,6 +230,14 @@ export default function Home() {
           <Card center fillWidth style={{ padding: 32, minHeight: 320, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>
             [ Demo GIF or Video Placeholder ]
           </Card>
+
+          <Carousel
+            items={[
+              { slide: <Row height={20} fill center radius="s" background="brand-strong"><Text>Uncoordinated</Text></Row> },
+              { slide: <Row height={20} fill center radius="s" background="accent-strong"><Text>Echelon-Enabled Device Coordination</Text></Row> },
+            ]}
+          />
+
           <Text variant="heading-default-m" style={{ textAlign: "center" }}>
             Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
           </Text>
