@@ -22,7 +22,7 @@ import {
   Flex
 } from "@once-ui-system/core";
 
-import Claude_Lab from "./blocked_road_lab_claude";
+import Blocked_Road_lab from "./blocked_road_lab";
 import { useRef } from "react";
 
 
@@ -234,7 +234,7 @@ export default function Home() {
           {/* <Text>Delivery Objectives Demo:</Text> */}
           {/* <New_Demo /> */}
           {/* <BlockedRoadLab_Claude /> */}
-          <Claude_Lab />
+          <Blocked_Road_lab />
           
 
           <Text variant="heading-default-m" style={{ textAlign: "center" }}>
