@@ -859,6 +859,10 @@ export default function BlockedRoadLab_Claude() {
         Gray squares are undiscovered walls (visible to you but unknown to cars), while red squares are discovered obstacles. 
         In <strong>uncoordinated</strong> mode, each vehicle only knows what it has personally discovered. 
         In <strong>coordinated</strong> mode, vehicles instantly share discoveries, dramatically reducing redundant exploration.
+
+        Use the buttons below to start/stop the simulation, switch modes, randomize positions, and lock the layout.
+        Make sure to lock the layout if you want to compare modes on the same obstacle/course setup.
+        Currently, due to a bug, the program only runs normally when you lock the layout... sorry :(
       </p>
       
       <div className="flex gap-4 mb-4">
