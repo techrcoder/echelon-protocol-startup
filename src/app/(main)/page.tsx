@@ -5,6 +5,7 @@ import {
   Text,
   Button,
   Column,
+  Grid,
   Row,  
   Card,
   Badge,
@@ -242,6 +243,93 @@ export default function Home() {
           
         </Column>
       </section>
+
+      {/* Team Section */}
+      <section ref={sectionRefs.team} id="team" style={{marginTop: 160}}>
+        <Column center align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 1100 }}>
+          <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>We’re builders across AI, robotics, and business.</Heading>
+
+          <Grid fillWidth columns="3" align="center" gap="l" marginRight="160" marginLeft="160">            
+            <Row fillWidth gap="s">
+              <Card style={{ width: 340, height: 120, textAlign: 'center', padding: 32, gap: 16 }}>
+                <Avatar size="l" >JM</Avatar>
+
+                <Column align="left" gap="8">
+                  <Heading as="h6" variant="heading-default-l">Jordan Marshall</Heading>
+                  <Text variant="heading-default-s">Aerospace Engineering</Text>
+                </Column>
+              </Card>
+            </Row>
+
+            <Row fillWidth> 
+              <Card style={{ width: 340, height: 120, textAlign: 'left', padding: 32, gap: 16 }}>
+                <Avatar size="l" >RP</Avatar>
+
+                <Column align="left" gap="8">
+                  <Heading as="h6" variant="heading-default-l">Rohan Patel</Heading>
+                  <Text variant="heading-default-s">AI For Business</Text>
+                </Column>
+              </Card>
+            </Row>
+
+            <Row fillWidth> 
+              <Card style={{ width: 340, height: 120, textAlign: 'left', padding: 32, gap: 16 }}>
+                <Avatar size="l" >KP</Avatar>
+
+                <Column align="left" gap="8">
+                  <Heading as="h6" variant="heading-default-l">Kavin Phaibiani</Heading>
+                  <Text variant="heading-default-s">Applied Data Science</Text>
+                </Column>
+              </Card>
+            </Row>
+
+            <Row fillWidth> 
+              <Card style={{ width: 340, height: 120, textAlign: 'center', padding: 32, gap: 16 }}>
+                <Avatar size="l" >AC</Avatar>
+
+                <Column align="left" gap="8">
+                  <Heading as="h6" variant="heading-default-l">Alyssa Chan</Heading>
+                  <Text variant="heading-default-s">Physics</Text>
+                </Column>
+              </Card>
+            </Row>
+
+            <Row fillWidth> 
+              <Card style={{ width: 340, height: 120, textAlign: 'center', padding: 32, gap: 16 }}>
+                <Avatar size="l" >GH</Avatar>
+
+                <Column align="left" gap="8">
+                  <Heading as="h6" variant="heading-default-l">Gavin Huang</Heading>
+                  <Text variant="heading-default-s">Computer Science</Text>
+                </Column>
+              </Card>
+            </Row>
+
+            <Row fillWidth>
+              <Card center style={{ width: 340, height: 120, textAlign: 'center', padding: 32, gap: 16 }}>
+                <Button
+                  size="m"
+                  style={{ fontWeight: 700, fontSize: 18, borderRadius: 24, padding: "24"}}
+                  onClick={() => window.location.href = 'mailto:rbpatel@usc.edu'}
+                >
+                  Contact Us
+                </Button>
+              </Card>
+            </Row>
+
+          </Grid>          
+        </Column>
+      </section>
+
+      {/* Footer */}
+      <footer ref={sectionRefs.footer} id="footer">
+        <Column align="center" style={{ padding: 32, marginTop: 48 }}>
+          <Badge> 
+
+          <Text variant="heading-default-s">&copy; 2025 Helix Protocol. All rights reserved. | rbpatel@usc.edu </Text>
+          </Badge>
+        </Column>
+      </footer>
     </Column>
   );
 }

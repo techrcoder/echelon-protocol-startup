@@ -135,52 +135,52 @@
     //     </Column>
     //   </section>
 
-    //   {/* Team Section */}
-    //   <section ref={sectionRefs.team} id="team">
-    //     <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 1100 }}>
-    //       <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>We’re builders across AI, robotics, and business.</Heading>
-    //       <Row gap="l" wrap={true} align="center">
-    //         <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
-    //           <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>JM</Avatar>
-    //           <Heading as="h3" variant="heading-default-l">Jordan Marshall</Heading>
-    //           <Text variant="heading-default-s">Simulation</Text>
-    //         </Card>
-    //         <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
-    //           <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>KP</Avatar>
-    //           <Heading as="h3" variant="heading-default-l">Kavin Phaibiani</Heading>
-    //           <Text variant="heading-default-s">Web + Systems</Text>
-    //         </Card>
-    //         <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
-    //           <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>RP</Avatar>
-    //           <Heading as="h3" variant="heading-default-l">Rohan Patel</Heading>
-    //           <Text variant="heading-default-s">Business + Strategy</Text>
-    //         </Card>
-    //         <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
-    //           <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>AC</Avatar>
-    //           <Heading as="h3" variant="heading-default-l">Alyssa Chan</Heading>
-    //           <Text variant="heading-default-s">Simulation</Text>
-    //         </Card>
-    //         <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
-    //           <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>GH</Avatar>
-    //           <Heading as="h3" variant="heading-default-l">Gavin Huang</Heading>
-    //           <Text variant="heading-default-s">Research + Ops</Text>
-    //         </Card>
-    //       </Row>
-    //       <Button
-    //         size="m"
-    //         style={{ fontWeight: 700, fontSize: 18, borderRadius: 24, marginTop: 24 }}
-    //         onClick={() => window.location.href = 'mailto:team@helixprotocol.com'}
-    //       >
-    //         Contact Us
-    //       </Button>
-    //     </Column>
-    //   </section>
+      // {/* Team Section */}
+      // <section ref={sectionRefs.team} id="team">
+      //   <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 1100 }}>
+      //     <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>We’re builders across AI, robotics, and business.</Heading>
+      //     <Row gap="l" wrap={true} align="center">
+      //       <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
+      //         <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>JM</Avatar>
+      //         <Heading as="h3" variant="heading-default-l">Jordan Marshall</Heading>
+      //         <Text variant="heading-default-s">Simulation</Text>
+      //       </Card>
+      //       <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
+      //         <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>KP</Avatar>
+      //         <Heading as="h3" variant="heading-default-l">Kavin Phaibiani</Heading>
+      //         <Text variant="heading-default-s">Web + Systems</Text>
+      //       </Card>
+      //       <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
+      //         <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>RP</Avatar>
+      //         <Heading as="h3" variant="heading-default-l">Rohan Patel</Heading>
+      //         <Text variant="heading-default-s">Business + Strategy</Text>
+      //       </Card>
+      //       <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
+      //         <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>AC</Avatar>
+      //         <Heading as="h3" variant="heading-default-l">Alyssa Chan</Heading>
+      //         <Text variant="heading-default-s">Simulation</Text>
+      //       </Card>
+      //       <Card style={{ minWidth: 220, textAlign: 'center', padding: 32 }}>
+      //         <Avatar size="l" style={{ margin: '0 auto 12px auto' }}>GH</Avatar>
+      //         <Heading as="h3" variant="heading-default-l">Gavin Huang</Heading>
+      //         <Text variant="heading-default-s">Research + Ops</Text>
+      //       </Card>
+      //     </Row>
+      //     <Button
+      //       size="m"
+      //       style={{ fontWeight: 700, fontSize: 18, borderRadius: 24, marginTop: 24 }}
+      //       onClick={() => window.location.href = 'mailto:team@helixprotocol.com'}
+      //     >
+      //       Contact Us
+      //     </Button>
+      //   </Column>
+      // </section>
 
-    //   {/* Footer */}
-    //   <footer ref={sectionRefs.footer} id="footer">
-    //     <Column align="center" style={{ padding: 32, marginTop: 48 }}>
-    //       <Text variant="heading-default-s">&copy; 2024 Helix Protocol. All rights reserved. | team@helixprotocol.com</Text>
-    //     </Column>
-    //   </footer>
+      // {/* Footer */}
+      // <footer ref={sectionRefs.footer} id="footer">
+      //   <Column align="center" style={{ padding: 32, marginTop: 48 }}>
+      //     <Text variant="heading-default-s">&copy; 2024 Helix Protocol. All rights reserved. | team@helixprotocol.com</Text>
+      //   </Column>
+      // </footer>
     // </Column>
 //   );
