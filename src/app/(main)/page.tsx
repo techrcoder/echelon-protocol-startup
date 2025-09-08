@@ -62,9 +62,7 @@ export default function Home() {
         style={{ justifyContent: "space-between" }}
         paddingY="m"
         paddingX="l"
-      > 
-        {/* Logo */}     
-        {/* <Logo icon="src/app/echelon_image.png" size="s" href="https://once-ui.com"/>    */}
+      >         
         <Text>
           E C H E L O N
         </Text>
@@ -84,113 +82,136 @@ export default function Home() {
         </Row>
       </Row>
 
-      {/* Header Text */}
-      <Text variant="display-strong-xl" wrap="balance" marginTop="160" marginRight="160" marginLeft="160" marginBottom="80" align="center" >
-        Orchestrating the Future of Robotic Fleets.
-      </Text>
+      {/* Header Text / HERO SECTION */}
+      <section ref={sectionRefs.hero} id="hero">
+        <Column center fillWidth gap="l" style={{ marginBottom: 300 }}>
+          <Text variant="display-strong-xl" wrap="balance" marginTop="160" marginRight="160" marginLeft="160" align="center" >
+            Orchestrating the Future of Robotic Fleets.
+          </Text>
 
-      {/* Subheader description text */}
-      <Text variant="heading-strong-xl" wrap="balance" marginRight="160" marginLeft="160" marginBottom="80" align="center" onBackground="neutral-medium">
-        We are building a secure protocol to allow autonomous vehicles, drones, and robots to safely coordinate decisions in real-time, solving critical labor shortages and fragmentation.
-      </Text>
+          {/* Subheader description text */}
+          <Text variant="heading-strong-xl" wrap="balance" marginRight="160" marginLeft="160" align="center" onBackground="neutral-medium">
+            We are building a secure protocol to allow autonomous vehicles, drones, and robots to safely coordinate decisions in real-time, solving critical labor shortages and fragmentation.
+          </Text>
 
-      {/* Call to Action Button - "Learn More" {or} "See Demo"*/}
-      <Button
-        size="l"
-        id="arrow-button-1" arrowIcon
-        style={{ fontWeight: 700, fontSize: 22, borderRadius: 32, padding: "20px 48px", marginBottom: 300 }}
-        onClick={() => handleNavClick("demo")}
-        // suffixIcon="chevronRight"        
-      >
-        See the Demo
-      </Button>
-        
-
-      <Text
-        variant="display-strong-m"
-        style={{ marginBottom: 24 }}
-      >
-        The Problem
-      </Text>
-
-      <Text variant="heading-strong-l" wrap="balance" marginRight="160" marginLeft="160" marginBottom="80" align="center" onBackground="neutral-medium">
-        Autonomous systems don’t talk to each other, leading to massive inefficiencies and security risks.
-      </Text>
-
-      {/* The Three Problems */}
-      <Row fillWidth gap="16" paddingX="160" marginBottom="160">
-        <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-          <Column gap="24" align="center">
-            <Flex background="brand-medium"
-              style={{
-                background: "brand-medium", // Use var() or a Once UI token
-                borderRadius: "50%",
-                width: 48,
-                height: 48,
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "auto", // for horizontal center in case
-              }}
-            >
-              <Text variant="body-strong-m" onBackground="brand-strong">1</Text>
-            </Flex>
-
-            <Text align="center" variant="body-default-m">Vehicles only see with their own sensors, leading to congestion and inefficiency.</Text>
-          </Column>
-        </Card>
-
-        <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-          <Column gap="24" align="center">
-            <Flex background="brand-medium"
-              style={{
-                background: "brand-medium", // Use var() or a Once UI token
-                borderRadius: "50%",
-                width: 48,
-                height: 48,
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "auto", // for horizontal center in case
-              }}
-            >
-              <Text variant="body-strong-m" onBackground="brand-strong">2</Text>
-            </Flex>
-
-            <Text align="center" variant="body-default-m">Fleets waste billions due to a critical lack of coordination and communication.</Text>
-          </Column>
-        </Card>
-
-        <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
-          <Column gap="24" align="center">
-            <Flex background="brand-medium"
-              style={{
-                background: "brand-medium", // Use var() or a Once UI token
-                borderRadius: "50%",
-                width: 48,
-                height: 48,
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "auto", // for horizontal center in case
-              }}
-            >
-              <Text variant="body-strong-m" onBackground="brand-strong">3</Text>
-            </Flex>
-
-            <Text align="center" variant="body-default-m">Safety is at risk without a universal, secure communication standard.</Text>
-          </Column>
-        </Card>
-      </Row>
+          {/* Call to Action Button - "Learn More" {or} "See Demo"*/}
+          <Button
+            size="l"
+            id="arrow-button-1" arrowIcon
+            style={{ fontWeight: 700, fontSize: 22, borderRadius: 32, padding: "20px 48px" }}
+            onClick={() => handleNavClick("demo")}
+          // suffixIcon="chevronRight"        
+          >
+            See the Demo
+          </Button>
+        </Column>
+      </section>
       
-      <Text
-        variant="display-strong-m"
-        style={{ marginBottom: 24 }}
-      >
-        Echelon Protocol
-      </Text>
+      {/* The Problem Section */}
+      <section ref={sectionRefs.problem} id="problem" style={{ marginBottom: 80}}>
+        <Column center fillWidth gap="l" style={{ marginBottom: 300 }}>
+          <Text variant="display-strong-m">
+            The Problem
+          </Text>
 
-      <Text variant="heading-strong-l" wrap="balance" marginRight="160" marginLeft="160" marginBottom="80" align="center" onBackground="neutral-medium">
-        A universal protocol for secure, verifiable, machine-to-machine coordination for intellitegent decision making.
-      </Text>
-              
+          <Text variant="heading-strong-l" wrap="balance" marginRight="160" marginLeft="160" align="center" onBackground="neutral-medium">
+            Autonomous systems don’t talk to each other, leading to massive inefficiencies and security risks.
+          </Text>
+
+          {/* The Three Problems */}
+          <Row fillWidth gap="16" paddingX="160">
+            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+              <Column gap="24" align="center">
+                <Flex background="brand-medium"
+                  style={{
+                    background: "brand-medium", // Use var() or a Once UI token
+                    borderRadius: "50%",
+                    width: 48,
+                    height: 48,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "auto", // for horizontal center in case
+                  }}
+                >
+                  <Text variant="body-strong-m" onBackground="brand-strong">1</Text>
+                </Flex>
+
+                <Text align="center" variant="body-default-m">Vehicles only see with their own sensors, leading to congestion and inefficiency.</Text>
+              </Column>
+            </Card>
+
+            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+              <Column gap="24" align="center">
+                <Flex background="brand-medium"
+                  style={{
+                    background: "brand-medium", // Use var() or a Once UI token
+                    borderRadius: "50%",
+                    width: 48,
+                    height: 48,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "auto", // for horizontal center in case
+                  }}
+                >
+                  <Text variant="body-strong-m" onBackground="brand-strong">2</Text>
+                </Flex>
+
+                <Text align="center" variant="body-default-m">Fleets waste billions due to a critical lack of coordination and communication.</Text>
+              </Column>
+            </Card>
+
+            <Card center radius="l-4" direction="column" border="neutral-alpha-medium" padding="s">
+              <Column gap="24" align="center">
+                <Flex background="brand-medium"
+                  style={{
+                    background: "brand-medium", // Use var() or a Once UI token
+                    borderRadius: "50%",
+                    width: 48,
+                    height: 48,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "auto", // for horizontal center in case
+                  }}
+                >
+                  <Text variant="body-strong-m" onBackground="brand-strong">3</Text>
+                </Flex>
+
+                <Text align="center" variant="body-default-m">Safety is at risk without a universal, secure communication standard.</Text>
+              </Column>
+            </Card>
+          </Row>
+        </Column>
+      </section>
+
+      {/* The Solution Section */}
+      <section ref={sectionRefs.solution} id="solution" style={{ marginBottom: 80 }}>
+        <Column center fillWidth gap="l" style={{ marginBottom: 300 }}>
+          <Text
+            variant="display-strong-m"
+            style={{ marginBottom: 24 }}
+          >
+            Echelon Protocol
+          </Text>
+
+          <Text variant="heading-strong-l" wrap="balance" marginRight="160" marginLeft="160" marginBottom="80" align="center" onBackground="neutral-medium">
+            A universal protocol for secure, verifiable, machine-to-machine coordination for intellitegent decision making.
+          </Text>
+        </Column>
+      </section>
+
+      {/* The Demo Section */}
+      <section ref={sectionRefs.demo} id="demo">
+        <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 900 }}>
+          <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>What happens when machines talk.</Heading>
+          <Card center fillWidth style={{ padding: 32, minHeight: 320, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>
+            [ Demo GIF or Video Placeholder ]
+          </Card>
+          <Text variant="heading-default-m" style={{ textAlign: "center" }}>
+            Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
+          </Text>
+        </Column>
+      </section>
+
     </Column>
 
     // <Column fillWidth>
@@ -304,17 +325,7 @@ export default function Home() {
     //   </section>
 
     //   {/* Demo Section */}
-    //   <section ref={sectionRefs.demo} id="demo">
-    //     <Column align="center" gap="l" style={{ margin: "0 auto 48px auto", maxWidth: 900 }}>
-    //       <Heading variant="display-strong-xl" style={{ marginBottom: 24 }}>What happens when machines talk.</Heading>
-    //       <Card style={{ padding: 32, minHeight: 320, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>
-    //         [ Demo GIF or Video Placeholder ]
-    //       </Card>
-    //       <Text variant="heading-default-m" style={{ textAlign: "center" }}>
-    //         Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
-    //       </Text>
-    //     </Column>
-    //   </section>
+      
 
     //   {/* Market Section */}
     //   <section ref={sectionRefs.market} id="market">

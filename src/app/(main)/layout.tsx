@@ -9,8 +9,8 @@ import { Meta, Schema,  Column, Flex, opacity, SpacingToken, Background} from "@
 import { Providers } from '@/components/Providers';
 
 export async function generateMetadata() {
-  return Meta.generate({
-    title: meta.home.title,
+  return Meta.generate({    
+    title: "Echelon Protocol",
     description: meta.home.description,
     baseURL: baseURL,
     path: meta.home.path,
