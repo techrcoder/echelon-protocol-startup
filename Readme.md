@@ -42,3 +42,5 @@ See our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 **Thank you for supporting Echelon Protocol!**  
 For inquiries, reach out via our contact page or by opening an issue on GitHub.
+git fetch origin
+git reset --hard origin/main
