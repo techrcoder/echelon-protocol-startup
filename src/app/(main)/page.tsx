@@ -233,10 +233,11 @@ export default function Home() {
 
           <Blocked_Road_lab />
           
-
           <Text variant="heading-strong-l" style={{ textAlign: "center", marginTop: "24", marginBottom: "300"}}>
             Our simulation shows the difference: when agents coordinate, congestion disappears and collisions are avoided.
           </Text>
+
+          
         </Column>
       </section>
     </Column>
