@@ -25,8 +25,8 @@ const GRID_SIZE = 40;
 const CELL_SIZE = 15;
 const CANVAS_WIDTH = GRID_SIZE * CELL_SIZE;
 const CANVAS_HEIGHT = GRID_SIZE * CELL_SIZE + 120; // Extra space for metrics
-const MOVE_DELAY = 1;
-const DISCOVERY_PAUSE = 1;
+const MOVE_DELAY = 8;
+const DISCOVERY_PAUSE = 15;
 
 interface Car {
   id: number;
