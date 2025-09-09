@@ -15,7 +15,8 @@ export async function generateMetadata() {
     baseURL: baseURL,
     path: meta.home.path,
     canonical: meta.home.canonical,
-    image: meta.home.image,
+    // image: meta.home.image,
+    image: "https://ibb.co/My76rnK4",
     robots: meta.home.robots,
     alternates: meta.home.alternates,
   });
