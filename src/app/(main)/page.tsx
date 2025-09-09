@@ -32,7 +32,7 @@ const sections = [
   { id: "problem", label: "Problem" },
   { id: "solution", label: "Solution" },
   { id: "demo", label: "Demo" },
-  { id: "market", label: "Market" },
+  
   { id: "team", label: "Team" },
   { id: "footer", label: "Contact" },
 ];
