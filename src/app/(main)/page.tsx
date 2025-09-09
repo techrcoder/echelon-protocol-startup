@@ -224,6 +224,22 @@ export default function Home() {
           <Text variant="heading-strong-l" wrap="balance" marginRight="160" marginLeft="160" marginBottom="80" align="center" onBackground="neutral-medium">
             A universal protocol for secure, verifiable, machine-to-machine coordination for intellitegent decision making.
           </Text>
+                  {/*  aspectRatio={5 / 4} */}
+          <TiltFx radius="xl">
+              <Card fillWidth center radius="l-4" direction="column" background="brand-strong" border="brand-alpha-medium" padding="s">
+            <Column gap="l" align="center" center margin="16">
+              <Text variant="body-strong-l">
+                • Shared dictionary-based schema for seamless communication.
+              </Text>
+              <Text variant="body-strong-l">
+                • Secure, verifiable messages to prevent cyberattacks.
+              </Text>
+              <Text variant="body-strong-l">
+                • Built on top of proven V2X and 5G technology.
+              </Text>
+            </Column>
+          </Card>
+          </TiltFx>
         </Column>
       </section>
 
@@ -323,12 +339,15 @@ export default function Home() {
 
       {/* Footer */}
       <footer ref={sectionRefs.footer} id="footer">
-        <Column align="center" style={{ padding: 32, marginTop: 48 }}>
-          <Badge> 
-
-          <Text variant="heading-default-s">&copy; 2025 Helix Protocol. All rights reserved. | rbpatel@usc.edu </Text>
+        <Row gap="l" align="center" style={{ padding: 32, marginTop: 48 }} >
+          <Badge>
+            <Text variant="heading-default-s">&copy; 2025 Helix Protocol. All rights reserved. | rbpatel@usc.edu </Text>
           </Badge>
-        </Column>
+
+          <Badge href="https://github.com/jordantm-usc/echelon-ui">
+            <Text variant="heading-default-s">MarketPlace UI</Text>
+          </Badge>
+        </Row>
       </footer>
     </Column>
   );
